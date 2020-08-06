@@ -11,7 +11,7 @@ import glob
 import random
 
 # Load Yolo Model and Weights
-net = cv2.dnn.readNet("yolov3_training_last_cf.weights", "yolov3_testing.cfg")
+net = cv2.dnn.readNet("yolov3_training_last_cf_2.weights", "yolov3_testing.cfg")
 
 # Names Of classes
 classes = ["number_plate"]
@@ -30,7 +30,7 @@ random.shuffle(images_path)
 for img_path in images_path:
     # load the image
     img = cv2.imread(img_path)
-    img = cv2.resize(img, None, fx = 0.6, fy=0.6)
+    img = cv2.resize(img, None, fx = 0.8, fy=0.8)
     height, width, channel = img.shape
     
     
@@ -74,7 +74,10 @@ for img_path in images_path:
             color = colors[class_ids[i]]
             cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
             cv2.putText(img, label, (x, y - 30), font, 1, color,2 )
-
+            number_plate = img[y:y+h,x:x+w]
+            number_plate = cv2.resize(number_plate, None, fx = 5, fy=5)
+            cv2.imshow("plate", number_plate)
+            key = cv2.waitKey(0)
 
     cv2.imshow("Image", img)
     key = cv2.waitKey(0)
