@@ -48,7 +48,7 @@ for img_path in images_path:
             scores = detection[5:]
             class_id = np.argmax(scores)
             confidence = scores[class_id]
-            if confidence > 0.1:
+            if confidence > 0.5:
                 # Object detected
                 print(class_id)
                 center_x = int(detection[0] * width)
@@ -72,6 +72,7 @@ for img_path in images_path:
             x, y, w, h = boxes[i]
             label = str(classes[class_ids[i]])
             color = colors[class_ids[i]]
+            print(confidences[i])
             cpy_img = img.copy()
             cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
             cv2.putText(img, label, (x, y - 30), font, 1, color,2 )
