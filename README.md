@@ -10,7 +10,7 @@ The project was execute in follwoing steps :
 # Creating the Dataset
 For creating the dataset, a total of 1077 car images from different angles were downloaded. It was ensured that there is no bias in the data towards a specific angle image of cars. Cars of different manufacturers, colours and sizes were taken for this data, to maintain versatility of the dataset. [Here](https://drive.google.com/drive/folders/1kkp7mTdD5HDUvXAohoynXPKSFzUc5axh?usp=sharing) is the link to the Dataset.
 
-<img src="images/cb13.jpeg" alt="car back" width="220"/> <img src="images/cbs1.jpeg" alt="car back side" width="220"/> <img src="images/cf71.jpeg" alt="car front" width="220"/> <img src="images/cfs44.jpeg" alt="car front side" width="220"/> 
+<img src="images/cb13.jpeg" alt="car back" width="230"/> <img src="images/cbs1.jpeg" alt="car back side" width="230"/> <img src="images/cf71.jpeg" alt="car front" width="230"/> <img src="images/cfs44.jpeg" alt="car front side" width="230"/> 
 
 # Labelling the dataset 
 For labelling the image, we use **LabelImg** software. It provides an extremely easy interface for creating annotations in Yolo format.  
@@ -40,8 +40,8 @@ We trained our model till 3000 iterations. [*Train_YoloV3_car.ipynb*](https://gi
 # Testing the Model 
 The Trained Model is tested in OpenCV framework. [*yolo_car_number_plate_detection.py*](https://github.com/mohit138/Number-Plate-Detection/blob/master/Car_number_plate/yolo_car_number_plate_detection.py) script is used to apply the model on given images and extract out the Number Plate from the image. Following are the results obtained:
 
-<img src="images/plate_1.JPG" alt="plate1" width="306"/> <img src="images/car_1.JPG" alt="car 1" width="614"/>  
+<img src="images/car_1.JPG" alt="car 1" width="614"/> <img src="images/plate_1.JPG" alt="plate1" width="306"/> 
 <img src="images/car1.JPG" alt="car 1" width="614"/> <img src="images/np1.JPG" alt="plate1" width="306"/>
-<img src="images/np2.JPG" alt="plate1" width="306"/> <img src="images/car2.JPG" alt="car 1" width="614"/> 
+<img src="images/car2.JPG" alt="car 1" width="614"/> <img src="images/np2.JPG" alt="plate1" width="306"/>  
 <img src="images/car3.JPG" alt="car 1" width="614"/> <img src="images/np_3.JPG" alt="plate1" width="306"/>
 
