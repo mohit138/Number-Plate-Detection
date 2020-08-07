@@ -10,7 +10,7 @@ The project was execute in follwoing steps :
 # Creating the Dataset
 For creating the dataset, a total of 1077 car images from different angles were downloaded. It was ensured that there is no bias in the data towards a specific angle image of cars. Cars of different manufacturers, colours and sizes were taken for this data, to maintain versatility of the dataset. [Here](https://drive.google.com/drive/folders/1kkp7mTdD5HDUvXAohoynXPKSFzUc5axh?usp=sharing) is the link to the Dataset.
 
-<img src="images/cb13.jpeg" alt="car back" width="230"/> <img src="images/cbs1.jpeg" alt="car back side" width="230"/> <img src="images/cf71.jpeg" alt="car front" width="230"/> <img src="images/cfs44.jpeg" alt="car front side" width="230"/> 
+<img src="images/cb13.jpeg" alt="car back" width="220"/> <img src="images/cbs1.jpeg" alt="car back side" width="220"/> <img src="images/cf71.jpeg" alt="car front" width="220"/> <img src="images/cfs44.jpeg" alt="car front side" width="220"/> 
 
 # Labelling the dataset 
 For labelling the image, we use **LabelImg** software. It provides an extremely easy interface for creating annotations in Yolo format.  
