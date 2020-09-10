@@ -44,4 +44,7 @@ The Trained Model is tested in OpenCV framework. [*yolo_car_number_plate_detecti
 <img src="images/car1.JPG" alt="car 1" width="614"/> <img src="images/np1.JPG" alt="plate1" width="306"/>
 <img src="images/car2.JPG" alt="car 1" width="614"/> <img src="images/np2.JPG" alt="plate1" width="306"/>  
 <img src="images/car3.JPG" alt="car 1" width="614"/> <img src="images/np_3.JPG" alt="plate1" width="306"/>
-
+ 
+**References**
+- [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet) 
+- [https://pysource.com/2020/04/02/train-yolo-to-detect-a-custom-object-online-with-free-gpu/](https://pysource.com/2020/04/02/train-yolo-to-detect-a-custom-object-online-with-free-gpu/)
